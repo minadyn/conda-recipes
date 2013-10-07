@@ -1,0 +1,58 @@
+package:
+  name: m2crypto
+  version: 0.21.1
+
+source:
+  fn: M2Crypto-0.21.1.tar.gz
+  url: https://pypi.python.org/packages/source/M/M2Crypto/M2Crypto-0.21.1.tar.gz
+  md5: f93d8462ff7646397a9f77a2fe602d17
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+# build:
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - m2crypto = m2crypto:main
+    #
+    # Would create an entry point called m2crypto that calls m2crypto.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - python
+    - distribute
+
+  run:
+    - python
+
+test:
+  # Python imports
+  imports:
+    - M2Crypto
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: http://chandlerproject.org/Projects/MeTooCrypto
+  license: BSD-style license
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
