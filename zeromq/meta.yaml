@@ -1,0 +1,37 @@
+package:
+  name: zeromq
+  version: 3.2.4
+
+source:
+  fn: zeromq-3.2.4.tar.gz
+  url: http://download.zeromq.org/zeromq-3.2.4.tar.gz
+  md5: 39af2d41e3fb744b98d7999e291e05dc
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+# build:
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - paste = paste:main
+    #
+    # Would create an entry point called paste that calls paste.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+#requirements:
+#  build:
+#    - python
+#    - distribute
+
+about:
+  home: http://zeromq.org
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

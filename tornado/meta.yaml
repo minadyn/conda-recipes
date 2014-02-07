@@ -1,0 +1,58 @@
+package:
+  name: tornado
+  version: 3.1.1
+
+source:
+  fn: tornado-3.1.1.tar.gz
+  url: https://pypi.python.org/packages/source/t/tornado/tornado-3.1.1.tar.gz
+  md5: 901e4f24b9e840860f6095451aa75828
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+# build:
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - tornado = tornado:main
+    #
+    # Would create an entry point called tornado that calls tornado.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - python
+    - distribute
+
+  run:
+    - python
+
+test:
+  # Python imports
+  imports:
+    - tornado
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: http://www.tornadoweb.org/
+  license: ache Software License
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
